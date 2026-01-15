@@ -37,7 +37,7 @@ function Home()
 
     return (
         <>
-            <div className="grid grid-cols-3 gap-5 px-8  z-10 mt-20">
+            <div className="grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 px-8  z-10 mt-20">
                 {single_card(box.slice(0,10))}
             </div>
             

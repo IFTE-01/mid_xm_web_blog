@@ -9,8 +9,7 @@ const Navbar =()=>
             <div className="flex justify-between">
                 <p className='text-3xl'>Cat Blog</p>
                 <div className='flex justify-center gap-5 text-2xl'>
-                    <Link to="/">Home</Link> 
-                    <Link to="/dashboard">Dashboard</Link >
+                    <Link to="/">Home</Link>  
                     <Link to="/Login">Login</Link >
                     <Link to="/Signup">Sign up</Link >
                 </div>

@@ -17,7 +17,7 @@ export default function Card_info() {
     <>
     <div className="text-center">
       <div className="flex justify-center">
-        <img className="h-180" src={blog.featured_image}/>
+        <img className="sm:h-180 h-100" src={blog.featured_image}/>
       </div>
       <div className="text-2xl">
         <h1 className="text-4xl py-5">{blog.title}</h1>

@@ -40,7 +40,7 @@ const Login = () => {
   };
   
   return (
-    <div className="border px-5 py-7 rounded-md relative top-60 left-[40%] flex flex-col w-100 text-center">
+    <div className="border px-5 py-7 rounded-md relative top-30 lg:top-60 sm:left-[30%] lg:left-[40%] left-[10%] flex flex-col w-100 text-center">
 
       <p className="text-4xl py-3">Login</p>
 

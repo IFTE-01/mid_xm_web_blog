@@ -18,8 +18,7 @@ function App() {
       path: tells React Router which page (URL) the user is going to
       element: tells React Router which component (function) to show on that page. */}
       <Route path="/" element ={<section><Navbar/>,<Home/></section>}/>
-      <Route path="/Home/:cardId" element ={<><Navbar/><Card_info/></>}/>
-      <Route path="/dashboard" element={<><Navbar/><Dash/></>}/>
+      <Route path="/Home/:cardId" element ={<><Navbar/><Card_info/></>}/> 
       <Route path="/Login" element={<><Navbar/><Login/></>}/>
       <Route path="/Signup" element={<><Navbar/><Signup/></>}/>
       
