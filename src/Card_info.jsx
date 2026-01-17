@@ -8,10 +8,12 @@ export default function Card_info() {
   useEffect(() => {
     fetch("https://jsonfakery.com/blogs")
       .then(res => res.json())
-      .then(data => setBlog(data.find(item => item.id == cardId)));//cardId ta element.id or item.id er sathe match korle blog e data jabe...
+      .then(data => setBlog(data.find(item => item.id == cardId)));
+      //cardId ta element.id or item.id er sathe match korle blog e data jabe...
   }, [cardId]);
 
-  if (!blog) return <p className="text-5xl text-center p-5">Loading...</p>; //blog na paoah porjonto loading show korbe...
+  if (!blog) return <p className="text-5xl text-center p-5">Loading...</p>; 
+  //blog na paoah porjonto loading show korbe...
 
   return (
     <>

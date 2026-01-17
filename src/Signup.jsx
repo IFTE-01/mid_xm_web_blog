@@ -12,6 +12,7 @@ const Signup = () => {
         e.preventDefault();
         try {
             const userinfo = await createUserWithEmailAndPassword(auth, email, password);
+            ///firebase a new registration er jonno use hoi...
             console.log("Registered:", userinfo.user);
             navigate("/login");
         } catch (error) {

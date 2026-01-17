@@ -24,6 +24,10 @@ function App() {
       
     </Routes>
     </BrowserRouter>
+    {/* 
+    BrowserRouter = eta loading na kore onno page e jete help kore
+    routes = sob route ke handle kore... 
+    */}
     </>
   )
 }

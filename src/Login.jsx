@@ -2,9 +2,9 @@ import "./App.css";
 import { useState } from "react";
 import { auth } from "./firebase/firebase.js";
 import {
-  signInWithEmailAndPassword,
-  signInWithPopup,
-  GoogleAuthProvider,
+  signInWithEmailAndPassword, /// firebase e log in korar jonno eta use hoi
+  signInWithPopup, ///google, github etc dia login korte use hoi
+  GoogleAuthProvider, ///ami je google dia login korbo seta firebase ke bole...
   GithubAuthProvider
 } from "firebase/auth";
  
@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate();
+  const navigate = useNavigate(); ///route er jonno use hoi
 
   const googleProvider = new GoogleAuthProvider(); 
   const githubProvider = new GithubAuthProvider(); 
@@ -21,6 +21,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      ///loading e time lagte pare tai await use kore...
       console.log("Logged in:", userCredential.user);
       navigate("/");
     } catch (error) {
@@ -47,9 +48,10 @@ const Login = () => {
       <input
         className="border text-2xl rounded-md px-3 mt-3 hover:bg-yellow-100 hover:scale-105 duration-300"
         type="email"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
+        placeholder="Email" ///empty screen hole eta show hobe...
+        value={email}  ///user jeta input screen e dekbe...
+        onChange={(e) => setEmail(e.target.value)} 
+        ///onClick: user jokhon input e kicco likhe tokhon eta call hoi
       />
 
       <input

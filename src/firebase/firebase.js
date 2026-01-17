@@ -18,6 +18,9 @@ const firebaseConfig = {
 
 // Initialize Firebase 
 const app = initializeApp(firebaseConfig); 
-
+///app = firebase er sathe connect kore data ekhane rakhe
+///initializeApp = eta firebase er sathe connect korte help kore 
+///firebaseConfig = kon project ke connect korbo eta bole seta...
 export const auth = getAuth();
+///getAuth() = firebase er access paite eta use hoi
 export default app;
